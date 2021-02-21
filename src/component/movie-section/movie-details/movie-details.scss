@@ -1,0 +1,99 @@
+.modal {
+    background-color: #fff !important;
+    border-radius: 5 !important;
+    // max-width: 500 !important;
+    // min-height: 300 !important;
+    // margin: 0 auto !important;
+    // padding: 30 !important;
+    display: inline-block !important;
+    z-index: 1000 !important;
+    // overflow-y: hidden; 
+}
+/* Important part */
+.modal-dialog{
+    overflow-y: initial !important;
+    max-width: 100vh !important;
+}
+.modal-body{
+    height: 80vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    position: relative;
+    width: 100%;
+}
+
+.fade:not(.show) {
+    opacity: 1 !important;
+
+}
+
+.backdrop{
+    // position: fixed !important;
+    // top: 0 !important;
+    // bottom: 0 !important;
+    // left: 0 !important;
+    // right: 0 !important;
+    background-color: rgba(0,0,0,0.3) !important;
+    // padding: 50 !important;
+}
+
+.movie-image-section {
+    position: relative;
+    width: 30%;
+    float: left;
+    margin: 2px 2px;
+    .user-rating-star {
+        width: 100%;
+        position: relative;
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .star-ratings-sprite {
+        background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
+        font-size: 0;
+        height: 21px;
+        line-height: 0;
+        overflow: hidden;
+        text-indent: -999em;
+        width: 110px;
+        margin: 3px auto 0 12px;
+        
+        .star-ratings-sprite-rating {
+          background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
+          background-position: 0 100%;
+          float: left;
+          height: 21px;
+          display:block;
+        }
+      }
+}
+
+.movie-image {
+    margin-left: 0px;
+    width: 40%;
+}
+
+.movie-detail-section{
+    width: 69%;
+    position: relative;
+    float: right;
+    label{
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    .movie-time{
+        font-weight: bold;
+        width: 20%;
+        float: left;
+        margin-left: 5px;
+    }
+    .movie-genre{
+        font-weight: bold;
+        width: 80%;
+        margin-left: 5px;
+    }
+}
+
+.movie-info{
+    margin-bottom: 20px;
+}

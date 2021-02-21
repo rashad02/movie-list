@@ -1,0 +1,44 @@
+.movies-section{
+    margin: 0 40px;
+}
+
+.movie-header {
+    border-bottom: 3px solid gray;
+    margin: 15px 0;
+    .header-text{
+        font-size: 2rem;
+        margin-bottom: 15px;
+        font-weight: bolder;
+        text-shadow: 2px 3px grey;
+    }
+}
+
+.movie-body{
+    display: inline-block;
+    margin: 0 !important;
+    padding: 0 !important;
+    .col-md-3{
+        width: 22% !important;
+        max-width: 22% !important;
+    }
+    .movie-image{
+        position: relative; 
+        margin-right: 5px;
+
+        margin-left: -15px;
+        
+        &:nth-child(4n){
+            margin-right: 45px !important;
+            float: right;
+        }
+        img{
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.nothing-found{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
