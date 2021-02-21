@@ -11,7 +11,7 @@ const Movies = ({search}) => {
     const [selectedId, setSelectedId] = useState(false);
 
     useEffect(() => {
-        axios.get('http://www.omdbapi.com/',{
+        axios.get('https://www.omdbapi.com/',{
             params: {
                 apiKey: '7897c31d',
                 s: search || "Batman",

@@ -17,7 +17,7 @@ class Home extends Component {
         }
     }
     async componentDidMount() {
-        await axios.get('http://www.omdbapi.com/',{
+        await axios.get('https://www.omdbapi.com/',{
             params: {
                 apiKey: '7897c31d',
                 y: 2021,

@@ -8,7 +8,7 @@ const MovieDetail = ({show, id, onCancel}) => {
     const [movie, setMovie] = useState({});
 
     useEffect(() => {
-        axios.get('http://www.omdbapi.com/',{
+        axios.get('https://www.omdbapi.com/',{
             params: {
                 apiKey: '7897c31d',
                 i:id,
