@@ -13,7 +13,7 @@ const Login = () => {
     const handleSubmit = async e => {
         let userData = {email, password};
 
-        await axios.get("http://localhost:3000/signin/", {
+        await axios.get("/signin/", {
             "Content-Type": 'application/json',
             params:userData
         }).then(res => {

@@ -34,7 +34,6 @@ app.get('/signin', (req, res) => {
     res.sendFile(HTML_FILE); // EDIT
 });
 
-
 app.post('/signin', (req,res) => {
    let userData = req.query;
 

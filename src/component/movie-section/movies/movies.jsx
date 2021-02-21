@@ -14,7 +14,6 @@ const Movies = ({search}) => {
         axios.get('http://www.omdbapi.com/',{
             params: {
                 apiKey: '7897c31d',
-                // t: 'a',
                 s: search || "Batman",
                 type:"movie",
                 page:"4"
