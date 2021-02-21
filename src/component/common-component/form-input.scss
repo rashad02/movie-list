@@ -52,8 +52,3 @@ $main-color: orangered;
     }
   }
 }
-
-*:focus {
-  outline: none;
-  @include shrinkLabel();
-  }
