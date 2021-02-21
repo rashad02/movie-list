@@ -34,8 +34,8 @@ const MovieDetail = ({show, id, onCancel}) => {
                                 <div className="modal-body">
                                 <div className="movie-image-section"> 
                                         <div className="movie-image"><img src={movie.Poster} height="350" width="280"/></div>
-                                        <span className="user-rating-star">User Rating: <div class="user-rating star-ratings-sprite"><span className="star-ratings-sprite-rating" style={{width: (parseFloat(movie.imdbRating)/10)  * 100 + '%' }}></span></div></span>
-                                        <span className="user-rating-star">Meta Score: <div class="user-rating star-ratings-sprite"><span className="star-ratings-sprite-rating" style={{width:(parseFloat(movie.Metascore) || 0 /10 * 100)+ '%'}}></span></div></span>
+                                        <span className="user-rating-star">User Rating: <div className="user-rating star-ratings-sprite"><span className="star-ratings-sprite-rating" style={{width: (parseFloat(movie.imdbRating)/10)  * 100 + '%' }}></span></div></span>
+                                        <span className="user-rating-star">Meta Score: <div className="user-rating star-ratings-sprite"><span className="star-ratings-sprite-rating" style={{width:(parseFloat(movie.Metascore) || 0 /10 * 100)+ '%'}}></span></div></span>
                                     </div>
                                     <div className="movie-detail-section">
                                         <h2 className="movie-title movie-info">{movie.Title}</h2>
