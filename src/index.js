@@ -23,11 +23,11 @@ const Index = props => {
        <BrowserRouter>
        <Header search={setSearch} selectActivePage={setActivepage} activepage={pathName && pathName!== '/' ? pathName.replace('/', '') : activepage}/>
       <Switch>
-        {!token ? <Route path='/signin'  render={() => <Login /> }/> :
-        <><Route exact path='/' render={() =>token ? <Home  search={search}/> : <Login  /> }/>
-        <Route path={`/movies`} render={() => token ? <Movies  search={search}/> : <Login /> }/>
-        <Route path='/tv-shows'  render={() =>token ? <TvShows  search={search}/> : <Login />}/>
-        <Route exact path='/new-released' render={() => token ? <NewReleased  search={search}/> : <Login /> }/></>}
+        <Route path='/signin'  render={() => <Login /> }/> 
+        <Route exact path='/' render={() =><Home  search={search}/>}/>
+        <Route path={`/movies`} render={() => <Movies  search={search}/>  }/>
+        <Route path='/tv-shows'  render={() =><TvShows  search={search}/>}/>
+        <Route exact path='/new-released' render={() =><NewReleased  search={search}/> }/>
       </Switch>
       </BrowserRouter>
   </div>;

@@ -45,11 +45,9 @@ app.get('/signin/', (req,res) => {
           });
     
     }else {
-        // res.redirect('/not-found');
         res.status(404).send({success: false, reason: 'Token creation failed!!'});
     }
    } else {
-        // res.redirect('/not-found');
         res.status(401).send({success: false, reason: 'User unauthorized!'});
    }
   
