@@ -29,12 +29,7 @@ app.get('/', (req, res) => {
  res.sendFile(HTML_FILE); // EDIT
 });
 
-
-app.get('/signin/', (req, res) => {
-    res.sendFile(HTML_FILE); // EDIT
-});
-
-app.post('/signin/', (req,res) => {
+app.get('/signin/', (req,res) => {
    let userData = req.query;
 
    if(Helper.authenticateUser(userData)) {
