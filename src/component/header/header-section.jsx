@@ -25,7 +25,6 @@ const Header = ({search, activepage, selectActivePage}) => {
                     <span className="col-md-2 col-xs-2 nav-menu">
                         <Link to='/' onClick={() => selectActivePage('home')}><span className= {`nav-menu-text ${activepage === 'home' ? 'selected': ''}`}>Home</span></Link>
                     </span>
-                    {cookie ? <>
                     <span className="col-md-2 col-xs-2 nav-menu">
                         <Link to='/movies' onClick={() => selectActivePage('movies')}><span className={`nav-menu-text ${activepage === 'movies' ? 'selected': ''}`}>Movies</span> </Link>
                     </span>
@@ -34,7 +33,7 @@ const Header = ({search, activepage, selectActivePage}) => {
                     </span>
                     <span className="col-md-2 col-xs-2 nav-menu">
                         <Link to='/new-released' onClick={() => selectActivePage('new-released')}><span className={`nav-menu-text ${activepage === 'new-released' ? 'selected': ''}`}>New Released</span></Link>
-                    </span></>: ''}
+                    </span>
                 </div>
             </div>
             <div className="col-md-3 navbar-right search">
